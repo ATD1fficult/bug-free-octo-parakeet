@@ -1,8 +1,11 @@
 package test;
 
 import example.*;
+import inheritance.Cat;
+import inheritance.Lion;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
     //        example.Human human1 = new example.Human();
@@ -74,31 +77,38 @@ public class Main {
 //        }
 //        employees = newestArray;
 //    }
-    public static void main(String[] args) {
-//        ArrayList<String> employees = getEmployees();
-//        employees.add("James");
-//        employees.remove("Black");
-//        employees.remove("Nigger");
-//        employees.remove(0);
-//        for (String employee : employees) {
-//            System.out.println(employee);
+//    public static void main(String[] args) {
+////        ArrayList<String> employees = getEmployees();
+////        employees.add("James");
+////        employees.remove("Black");
+////        employees.remove("Nigger");
+////        employees.remove(0);
+////        for (String employee : employees) {
+////            System.out.println(employee);
+////        }
+////        ArrayList<Integer> numbers = new ArrayList<>();
+////        for (int i = 0; i < 5; i++){
+////            numbers.add(i);
+////        }
+//        HashSet<String> names = getEmployees();
+////        ArrayList<String> result = new ArrayList<>();
+////        for (int i = 0; i < names.size(); i++){
+////            String s = numbers.get(i) + " - " + names.get(i);
+////            result.add(s);
+////            System.out.println(s);
 //        }
-        ArrayList<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < 1000; i++){
-            numbers.add(i);
-        }
-        for(int number : numbers){
-            System.out.println(number);
-        }
-    }
-    private static ArrayList<String> getEmployees(){
-        ArrayList <String> employees = new ArrayList<>();
-        employees.add("Person");
-        employees.add("Nigger");
-        employees.add("Literally");
-        employees.add("Black");
-        employees.add("White");
-        return employees;
+//        for (String name : names){
+//            System.out.println(name);
+//        }
+//    }
+//    private static HashSet<String> getEmployees(){
+//        HashSet <String> employees = new HashSet<>();
+//        employees.add("Person");
+//        employees.add("Nigger");
+//        employees.add("Literally");
+//        employees.add("Black");
+//        employees.add("White");
+//        return employees;
 //    public static void main(String[] args) {
 //        int a = 5;
 //        Integer a1 = 5;
@@ -130,4 +140,9 @@ public class Main {
 //        Human John = new Human(name, age1);
 //        System.out.println(John.getAge() + " " + John.getName());
 //    }
-}}
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        Lion lion = new Lion();
+        System.out.println(cat.isCanEatPerson());
+        System.out.println(lion.isCanEatPerson());
+    }}
