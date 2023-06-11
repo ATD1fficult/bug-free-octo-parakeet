@@ -3,9 +3,12 @@ package test;
 import example.*;
 import inheritance.Cat;
 import inheritance.Lion;
+import inheritance.Rectangle;
+import inheritance.Triangle;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.TreeMap;
 
 public class Main {
     //        example.Human human1 = new example.Human();
@@ -147,9 +150,12 @@ public class Main {
 //        System.out.println(lion.isCanEatPerson());
 //        cat.eat();
 //        lion.eat();
-        Box box = new Box(10);
-        WeightBox weightBox = new WeightBox(20, 20, 20, 20);
-        box.showInfo();
-        weightBox.showInfo();
-
+//        Box box = new Box(10);
+//        WeightBox weightBox = new WeightBox(20, 20, 20, 20);
+//        box.showInfo();
+//        weightBox.showInfo();
+        Rectangle rect = new Rectangle(10, 20);
+        Triangle triangle = new Triangle(10, 20, 30);
+        rect.showPerimeter();
+        triangle.showPerimeter();
     }}

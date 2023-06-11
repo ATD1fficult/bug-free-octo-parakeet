@@ -1,12 +1,15 @@
 package inheritance;
 
-public class Shape {
-    double a;
-    double b;
+public abstract  class Shape {
+    protected double a;
+    protected double b;
 
-    public double perimeter(){
-        return (a + b) * 2;
+    public Shape(double a, double b) {
+        this.a = a;
+        this.b = b;
     }
+
+    public abstract double perimeter();
 
     public void showPerimeter(){
         System.out.println(perimeter());

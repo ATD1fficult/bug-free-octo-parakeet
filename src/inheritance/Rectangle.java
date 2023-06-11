@@ -1,6 +1,10 @@
 package inheritance;
 
 public class Rectangle extends Shape {
+    public Rectangle(double a, double b) {
+        super(a, b);
+    }
+
     @Override
     public void showPerimeter() {
         super.showPerimeter();
@@ -8,6 +12,6 @@ public class Rectangle extends Shape {
 
     @Override
     public double perimeter() {
-        return super.perimeter();
+        return (a+b) * 2;
     }
 }
