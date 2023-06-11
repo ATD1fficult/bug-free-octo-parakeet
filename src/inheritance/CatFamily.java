@@ -19,12 +19,16 @@ public class CatFamily {
 
     protected boolean canEatPerson;
 
+
     public CatFamily(int legs, int eyes, boolean canEatPerson) {
         this.legs = legs;
         this.eyes = eyes;
         this.canEatPerson = canEatPerson;
     }
 
+    public void eat(){
+        System.out.println("Кушаю");
+    }
     public void setLegs(int legs) {
         this.legs = legs;
     }

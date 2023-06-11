@@ -1,9 +1,9 @@
 package test;
 
 public class Box {
-    private double length;
-    private double width;
-    private double height;
+    protected double length;
+    protected double width;
+    protected double height;
 
     public Box(){
        this(10);
@@ -27,6 +27,10 @@ public class Box {
         this.length = length;
         this.width = width;
         this.height = height;
+    }
+
+    public void showInfo(){
+        System.out.println(width + " " + length + " " + height);
     }
 
     public int Compare(Box another){

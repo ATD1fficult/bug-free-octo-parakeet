@@ -141,8 +141,15 @@ public class Main {
 //        System.out.println(John.getAge() + " " + John.getName());
 //    }
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Lion lion = new Lion();
-        System.out.println(cat.isCanEatPerson());
-        System.out.println(lion.isCanEatPerson());
+//        Cat cat = new Cat();
+//        Lion lion = new Lion();
+//        System.out.println(cat.isCanEatPerson());
+//        System.out.println(lion.isCanEatPerson());
+//        cat.eat();
+//        lion.eat();
+        Box box = new Box(10);
+        WeightBox weightBox = new WeightBox(20, 20, 20, 20);
+        box.showInfo();
+        weightBox.showInfo();
+
     }}
